@@ -1,0 +1,20 @@
+header {
+	/*padding-top: 12rem;*/
+    padding-bottom: 15rem;
+}
+video {
+	/*position: absolute;*/
+    /*background-color: #212529;*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.topo {
+	font-size: 20px;
+	position: fixed;
+}
+p {
+	z-index: 1;
+}
