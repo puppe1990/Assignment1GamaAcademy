@@ -1,20 +1,28 @@
-header {
-	/*padding-top: 12rem;*/
-    padding-bottom: 15rem;
-}
+
 video {
-	/*position: absolute;*/
-    /*background-color: #212529;*/
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 0;
+    filter: blur( 3px );
 }
 .topo {
-	font-size: 20px;
-	position: fixed;
+	font-size: 50px;
+    background-color: #62eefc;
+	text-transform: uppercase;
+	font-family: 'Slabo 27px', serif;
 }
-p {
-	z-index: 1;
+.sobre-video {
+	position: absolute;
+    margin: -44% 15% 15% 30%;
+	font-family: 'Share Tech', sans-serif;
+	font-size: 140px;
+	text-transform: uppercase;
+}
+section {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-bottom: 42%;    
 }
