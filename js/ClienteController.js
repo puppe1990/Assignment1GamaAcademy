@@ -15,15 +15,31 @@ class ClienteController {
 		);
 
 		// console.log(cliente);
-		//converter JSON cliente em uma string
-		let stringCliente = JSON.stringify(cliente);
+		if(cliente !== undefined) {
+			let cont = cliente.nome.split(" ");
+			if(cont.length < 2){
+				alert("Insira seu nome completo")
+			}else{
+				//converter JSON cliente em uma string
+				let stringCliente = JSON.stringify(cliente);
 
-		//salvar no local storage
-		window.localStorage.setItem('cliente', stringCliente);
+				//salvar no local storage
+				window.localStorage.setItem('cliente', stringCliente);
 
-		//Resgatando o dado
-		let localCliente = window.localStorage.getItem('cliente', stringCliente);
-		console.log(localCliente);
+				//Resgatando o dado
+				let localCliente = window.localStorage.getItem('cliente', stringCliente);
+				console.log(localCliente);
 
+				//Construção div de sucesso
+				let div = document.getElementById("success");
+				let conteudo = document.createTextNode("Cadastro Realizado com Action!");
+				let elemento = document.createElement("div");
+		    	elemento.appendChild(conteudo);
+				elemento.setAttribute("class", "success");
+				div.appendChild(elemento); 	
+			}
+		}else {
+			console.log("erro");
+		}
 	}
 }
