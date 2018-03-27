@@ -79,6 +79,12 @@ p {
 section > p{
 	font-size: 200%;
 }
+.success {
+	text-align: center;
+	font-size: 200%;
+	font-family: 'Share Tech', sans-serif;
+	color: green;
+}
 @media (max-width: 950px) {
 	h1 {
 		font-size: 50%;
