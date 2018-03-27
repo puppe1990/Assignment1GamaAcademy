@@ -11,15 +11,15 @@
 		<h1>Empresa Action</h1>
 	</nav>
 	<header>
-		<video muted autoplay loop poster="images/torres.jpg" class="bg_video">
+		<video muted autoplay loop poster="images/borapraaction.jpg" class="bg_video">
  			<!-- <source src="videos/mergulho.webm" type="video/webm"> -->
  			<source src="videos/mergulho.mp4" type="video/mp4">
 		</video> 
 		<div class="sobre-video">
 			<h1>Bora pra Action!</h1>
 		</div>
-	</header>
-	<section>
+	</header>id="" 
+	<sesectionction>
 		<div class="conteudo-principal">
 			<div class="conteudo-div">
 				<div class="foto">
@@ -43,13 +43,18 @@
 	</section>
 	<section class="ultima-section">
 		<p>Insira seus dados e bora pra action!</p>
-		<form class="dados-form">
-			<input class="input" type="text" name="nome" placeholder="Insira seu nome completo">
-			<input class="input" type="email" name="email" placeholder="Insira seu e-mal">
+		<form class="dados-form" onsubmit="clienteController.adiciona(event)">
+			<input class="input" type="text" id="nome" name="nome" required placeholder="Insira seu nome completo">
+			<input class="input" type="email" id="email" name="email" required placeholder="Insira seu e-mal">
 			<button class="botao" type="submit">ENVIAR</button>
 		</form>
 	</section>
 
-	<script src="js/script.js"></script>
+	<!-- <script src="js/script.js"></script> -->
+	<script src="js/Cliente.js"></script>
+	<script src="js/ClienteController.js"></script>
+	<script type="text/javascript">
+    	let clienteController = new ClienteController();
+	</script>
 </body>
 </html>
