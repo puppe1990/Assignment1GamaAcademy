@@ -4,6 +4,7 @@ class ClienteController {
 		let $ = document.querySelector.bind(document);
 		this._inputNome = $("#nome");
 		this._inputEmail = $("#email");		
+		this._inputEmpresa = $("#empresa");		
 	}
 
 	adiciona(event) {
@@ -11,7 +12,8 @@ class ClienteController {
 
 		let cliente = new Cliente(
 			this._inputNome.value,
-			this._inputEmail.value
+			this._inputEmail.value,
+			this._inputEmpresa.value
 		);
 
 		// console.log(cliente);
