@@ -1,7 +1,8 @@
 class Cliente {
-	constructor(nome,email) {
+	constructor(nome,email,empresa) {
 		this._nome = nome;
 		this._email = email;
+		this._empresa = empresa;
 		Object.freeze(this);
 	}
 
@@ -11,6 +12,10 @@ class Cliente {
 
 	get email() {
 		return this.email;
+	}
+
+	get empresa() {
+		return this.empresa;
 	}
 
 }
